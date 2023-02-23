@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADOIntegrationWithMVC", "ADOIntegrationWithMVC\ADOIntegrationWithMVC.csproj", "{3927C86C-0430-4795-B9CA-09842604891E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3927C86C-0430-4795-B9CA-09842604891E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3927C86C-0430-4795-B9CA-09842604891E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3927C86C-0430-4795-B9CA-09842604891E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3927C86C-0430-4795-B9CA-09842604891E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F5FDE28-9ABB-4DB1-BC72-FDC70B49170A}
+	EndGlobalSection
+EndGlobal

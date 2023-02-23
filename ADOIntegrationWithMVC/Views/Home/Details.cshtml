@@ -1,0 +1,39 @@
+﻿@model ADOIntegrationWithMVC.Models.Employee
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="row justify-content-center align-items-center mt-5">
+        <form action="" method="post" class=" border border-3 border-info rounded-3 alert alert-success p-3 w-50">
+            <h2 class="text-center alert alert-warning">Employee All Information...!!!</h2>
+            <table style="margin-left:20% ; width:60%" class="fw-bold">
+                <tr>
+                    <td>@Html.DisplayNameFor(Model => Model.EmpId)</td>
+                    <td> @Html.DisplayFor(Model => Model.EmpId)</td>
+                </tr>
+                <tr>
+                    <td> @Html.DisplayNameFor(Model => Model.EmpName)</td>
+                    <td> @Html.DisplayFor(Model => Model.EmpName)</td>
+                </tr>
+                <tr>
+                    <td> @Html.DisplayNameFor(Model=>Model.Salary)</td>
+                    <td>@Html.DisplayFor(Model => Model.Salary)</td>
+                </tr>
+                <tr>
+                    <td>@Html.DisplayNameFor(Model => Model.Job)</td>
+                    <td> @Html.DisplayFor(Model => Model.Job)</td>
+                </tr>
+                <tr>
+                    <td>@Html.DisplayNameFor(Model => Model.Dname)</td>
+                    <td>@Html.DisplayFor(Model => Model.Dname)</td>
+                </tr>
+                <thead> @Html.ActionLink("Back to List", "EmpDetails")</thead>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

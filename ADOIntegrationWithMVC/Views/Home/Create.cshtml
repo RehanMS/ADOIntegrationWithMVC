@@ -1,0 +1,45 @@
+﻿@model ADOIntegrationWithMVC.Models.Employee
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="row justify-content-center align-items-center mt-5">
+        <form action="" method="post" class=" border border-3 border-info rounded-3 alert alert-success p-3 w-50"  >
+            <h2 class="text-center alert alert-warning">Please Register New Employee Details ....!!!</h2>
+            <table style="margin-left:20%">
+                <tr>
+                    <td><label class="p-2 fw-bold">Enter EmpId</label></td>
+                    <td><input class="rounded-3 border-info" name="EmpId" type="text" /></td>
+                </tr>
+                <tr>
+                    <td><label class="p-2 fw-bold">Enter EmpName</label></td>
+                    <td><input class="rounded-3 border-info" name="EmpName" type="text" /></td>
+                </tr>
+                <tr>
+                    <td><label class="p-2 fw-bold">Enter Salary</label></td>
+                    <td><input class="rounded-3 border-info" name="Salary" type="text" /></td>
+                </tr>
+                <tr>
+                    <td><label class="p-2 fw-bold">Enter Job</label></td>
+                    <td><input class="rounded-3 border-info" name="Job" type="text" /></td>
+                </tr>
+                <tr>
+                    <td><label class="p-2 fw-bold">Enter DeptName</label></td>
+                    <td><input class="rounded-3 border-info" name="Dname" type="text" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Register" class="btn btn-outline-success p-2 m-2" style="width:60%" />
+                        <input type="reset" value="Reset" class="btn btn-outline-warning p-2 m-2" style="width:60%" />
+                    </td>
+                </tr>
+                <thead> @Html.ActionLink("Back to List", "EmpDetails")</thead>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

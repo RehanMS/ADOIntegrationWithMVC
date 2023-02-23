@@ -1,0 +1,68 @@
+﻿@model List<ADOIntegrationWithMVC.Models.Employee>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EmpDetails</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="row justify-content-center align-items-center mt-5">
+        <form action="" method="post" class=" border border-3 border-info rounded-3 alert alert-success p-3 w-75" style="height: 600px; overflow-x: scroll;">
+            <h1 class=" alert alert-warning text-center">Eployee Information</h1>
+            @if (TempData["InsertMessage"] != null)
+            {
+                <button class="alert alert-danger alert-dismissible close" style="margin-left:5%">
+                    <strong>Data has been Inserted Successfully</strong>
+                    <span class="p-3 "> &times;</span>
+                </button>
+                <br />
+
+            }
+
+            @if (TempData["UpdateMessage"] != null)
+            {
+                <button class="alert alert-danger alert-dismissible close" style="margin-left:5%">
+                    <span class="p-3"> &times; </span>
+                    <strong>Data has been Updated Successfully</strong>
+                </button>
+                <br />
+            }
+            @if (TempData["DeleteMessage"] != null)
+            {
+                <button class="alert alert-danger alert-dismissible close" style="margin-left:5%">
+                    <span class="p-3"> &times; </span>
+                    <strong>Data has been Deleted Successfully</strong>
+                </button>
+                <br />
+            }
+            <a href="/Home/Create" class="btn btn-outline-success" style="margin-left:5%">Register New Employee</a>
+            <table class="w-75 text-center" style="margin-left:10%">
+                <tr>
+                    <th class="p-2">EmpId</th>
+                    <th>EmpName</th>
+                    <th>Salary</th>
+                    <th>Job</th>
+                    <th>Dname</th>
+                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th>@item.EmpId</th>
+                        <th>@item.EmpName</th>
+                        <th>@item.Salary</th>
+                        <th>@item.Job</th>
+                        <th>@item.Dname</th>
+                        <td>
+                            <a class="btn btn-outline-info" href="/Home/Details/@item.EmpId">Details</a>
+                            <a class="btn btn-outline-warning" href="/Home/Edit/@item.EmpId">Edit</a>
+                            <a class="btn btn-outline-danger" href="/Home/Delete/@item.EmpId">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </table>
+        </form>
+    </div>
+</body>
+</html>
